@@ -1,0 +1,78 @@
+/* NERV // THEME MATRIX — rofi style */
+/* NervRei palette: surface #060d14, primary #7ecfcf, outline #1f3d55 */
+
+* {
+    background-color:   #060d14;
+    background-alt:     #0f1f2e;
+    foreground:         #daeef0;
+    selected-fg:        #7ecfcf;
+    accent:             #7ecfcf;
+    border-col:         #1f3d55;
+    font:               "monospace 13";
+}
+
+window {
+    location:           center;
+    anchor:             center;
+    width:              440px;
+    border-radius:      10px;
+    border:             1px solid;
+    border-color:       @border-col;
+    background-color:   @background-color;
+    padding:            0px;
+}
+
+mainbox {
+    spacing:            0px;
+    background-color:   transparent;
+    children:           [ "inputbar", "listview" ];
+}
+
+inputbar {
+    padding:            14px 18px 8px 18px;
+    spacing:            0px;
+    background-color:   transparent;
+    children:           [ "prompt" ];
+}
+
+prompt {
+    background-color:   transparent;
+    text-color:         #1f3d55;
+    font:               "monospace 8";
+}
+
+entry {
+    enabled:            false;
+}
+
+listview {
+    columns:            1;
+    lines:              3;
+    spacing:            0px;
+    padding:            6px 6px 8px 6px;
+    background-color:   transparent;
+    scrollbar:          false;
+    fixed-height:       true;
+}
+
+element {
+    padding:            11px 16px;
+    border-radius:      6px;
+    background-color:   transparent;
+    text-color:         @foreground;
+    cursor:             pointer;
+}
+
+element selected.normal {
+    background-color:   @background-alt;
+    text-color:         @selected-fg;
+    border:             0 0 0 2px;
+    border-color:       @accent;
+}
+
+element-text {
+    background-color:   transparent;
+    text-color:         inherit;
+    vertical-align:     0.5;
+    horizontal-align:   0.0;
+}

@@ -1,0 +1,46 @@
+/* NERV // THEME MATRIX — wofi style */
+/* NervRei palette: surface #060d14, primary #7ecfcf, outline #1f3d55 */
+
+window {
+    background-color: #060d14;
+    border: 1px solid #1f3d55;
+    border-radius: 10px;
+    font-family: monospace;
+    font-size: 13px;
+}
+
+#outer-box {
+    background-color: transparent;
+    padding: 0px;
+}
+
+#input {
+    display: none;
+}
+
+#scroll {
+    background-color: transparent;
+    padding: 6px 6px 8px 6px;
+}
+
+#inner-box {
+    background-color: transparent;
+}
+
+#entry {
+    background-color: transparent;
+    color: #daeef0;
+    padding: 11px 16px;
+    border-radius: 6px;
+}
+
+#entry:selected {
+    background-color: #0f1f2e;
+    color: #7ecfcf;
+    border-left: 2px solid #7ecfcf;
+}
+
+#text {
+    background-color: transparent;
+    color: inherit;
+}
